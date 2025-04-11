@@ -52,11 +52,6 @@ app.get('/api/leerdatospersonas', async (req, res) => {
   });
 
 
-  const express = require('express');
-const router = express.Router();
-const sql = require('./db'); // Asumo que tienes un módulo para manejar la conexión a PostgreSQL
-
-// Endpoint para guardar persona y su coche
 router.post('/api/guardar-persona-coche', async (req, res) => {
     const { 
         cedula, 
@@ -127,7 +122,6 @@ router.post('/api/guardar-persona-coche', async (req, res) => {
     }
 });
 
-module.exports = router;
   
 
 //Crear puerto de conexion del servidor
